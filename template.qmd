@@ -1,0 +1,104 @@
+---
+title: "My title"
+authors: 
+  - name: Giancarlo M. Correa
+    affiliations:
+      - ref: azti1
+    email: gmoron@azti.es
+    corresponding: true
+  - name: Gorka Merino
+    affiliations:
+      - ref: azti2
+affiliations:
+  - id: azti1
+    name: AZTI, Marine Research, Basque Research and Technology Alliance (BRTA), Txatxarramendi ugartea z/g, 48395 Sukarrieta (Bizkaia), Spain
+  - id: azti2
+    name: AZTI, Marine Research, Basque Research and Technology Alliance (BRTA), Herrera Kaia, Portualdea z/g, 20110 Pasaia (Gipuzkoa), Spain
+filters:
+  - authors-block
+link-citations: true
+bibliography: bibliography.bib
+csl: ICCAT.csl
+format:
+  docx:
+    toc: false
+    number-sections: false
+    reference-doc: custom-reference-doc.docx
+editor: source
+abstract: |
+  Space: the final frontier. These are the voyages of the starship *Enterprise*. Its continuing mission: to explore strange new worlds. To seek out new life and new civilizations. To boldly go where no one has gone before!
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, 
+                      verbose = FALSE,
+                      dev = "ragg_png",
+                      out.width = "100%", 
+                      message = FALSE, 
+                      warning = FALSE,
+                      dpi = 1200)
+```
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+require(knitr)
+require(jpeg)
+```
+
+\newpage
+
+# Introduction
+
+This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. 
+
+## This is a subtitle
+
+The intro.
+
+### This is subtitle level 2
+
+# Methods
+
+The methods. See figure (@fig-hist-catch). Also see @tbl-summary.
+
+# Results
+
+The results with a citation [@escalleQuantifyingDriftingFish2021].
+
+# Discussion
+
+The discussion [^1].
+
+[^1]: The text of the footnote.
+
+# Acknowledgements
+
+The acknowledgements.
+
+# References
+
+::: {#refs}
+:::
+
+{{< pagebreak >}}
+
+# Tables
+
+```{r}
+#| label: tbl-summary
+#| tbl-cap: "This is my table."
+#| tbl-colwidths: [60,40]
+#| echo: false
+#| message: false
+#| warning: false
+kable(head(iris))
+```
+
+{{< pagebreak >}}
+
+# Figures
+
+![This is my figure.](images/example.jpg){#fig-hist-catch width="4032px" height="3024px"}
+
