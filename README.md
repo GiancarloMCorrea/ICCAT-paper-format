@@ -1,7 +1,7 @@
 ICCAT working papers
 ============================
 
-This is a Quarto template for producing working papers following the ICCAT format. This code was initially implemented by Luis Lau, and then adapted by myself.
+This is a Quarto template for producing working papers following the ICCAT format. This code was initially implemented by [Luis Lau](https://github.com/LuisLauM), and then adapted by myself.
 
 You just need to modify the `template.qmd`. Store your images in the `image` folder.
 
